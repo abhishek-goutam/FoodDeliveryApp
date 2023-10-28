@@ -12,7 +12,7 @@ const mongoose = require('mongoose');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })); // parse incoming Request Object if object, with nested objects, or generally any type.
 // app.use(express.urlencoded({ extended: false }))  //can only parse incoming Request Object if strings or arrays
-mongoose.connect('mongodb://localhost:27017/fooddelivery')
+mongoose.connect('mongodb+srv://abhishekgoutam8894:NhCWihrgRlyC8ulr@cluster0.tbvuocc.mongodb.net/?retryWrites=true&w=majority')
 console.log("Connected to Mongodb");
 
 app.use((req,res,next)=>{
