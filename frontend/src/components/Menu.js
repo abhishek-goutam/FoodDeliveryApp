@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import products from "./Data";
-
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 // Define your CSS styles as an object
 const styles = {
   cardContainer: {
@@ -29,17 +28,28 @@ const styles = {
     marginBottom: "10px",
   },
 };
+
 const Menu = () => {
   const [counter, setCounter] = useState(0);
-  const addToCart = (item) => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:3002/api/dishes").then((response) => {
+      console.log("response",response.data);
+      setProducts(response.data);
+    });
+  }, []);
+  const addToCart = () => {
     setCounter(counter + 1);
-    itemsArray.push(item);
-    localStorage.setItem("items", JSON.stringify(itemsArray));
+    // itemsArray.push(item);
+    // localStorage.setItem("items", JSON.stringify(itemsArray));
     console.log("I clicked increment button and count2 got incremented");
   };
-  const itemsArray = JSON.parse(localStorage.getItem("items")) ?  JSON.parse(localStorage.getItem("items")) : [];
+  const itemsArray = JSON.parse(localStorage.getItem("items"))
+    ? JSON.parse(localStorage.getItem("items"))
+    : [];
   console.log("eeeeeeeeeeeeeeeeeeeee", itemsArray);
-
+  localStorage.setItem("items", JSON.stringify(itemsArray));
   const handleClickDecrement = () => {
     setCounter(counter - 1);
     console.log("I clicked decrement button and count got decremented");
@@ -63,11 +73,11 @@ const Menu = () => {
                 <h3 style={{ color: "red" }}>${item.price}</h3>
               </div>
             </div>
-            <button type="button" onClick={() => handleClickDecrement}>
+            <button type="button" onClick={handleClickDecrement}>
               -
             </button>
             {counter}
-            <button type="button" onClick={() => addToCart(item)}>
+            <button type="button" onClick={addToCart}>
               +
             </button>
           </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 const navLinkStyle = {
   marginRight: "10px",
@@ -16,14 +16,17 @@ function Header() {
   return (
     <div className="header">
       <h1 style={{ textAlign: "left", fontSize: "50px" }}>Food Delivery App</h1>
-      <NavLink to='/cart' style={
-        { marginRight: "10px",
-        textDecoration: "none", 
-        color: "white",
-      float:'right',
-      // fontSize:'larger',
-    }
-      } activeStyle={activeStyle}>
+      <NavLink
+        to="/cart"
+        style={{
+          marginRight: "10px",
+          textDecoration: "none",
+          color: "white",
+          float: "right",
+          // fontSize:'larger',
+        }}
+        activeStyle={activeStyle}
+      >
         <ShoppingCartIcon />
       </NavLink>
       <nav>

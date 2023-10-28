@@ -1,0 +1,75 @@
+[
+  {
+    "id": 9,
+    "name": "Cold Coffee",
+    "imgsrc": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/04/cold-coffee-recipe-2.jpg",
+    "category": "beverages",
+    "price": 80,
+    "quantity": 0
+  },
+  {
+    "id": 10,
+    "name": "Tea",
+    "imgsrc": "https://static.toiimg.com/photo/83173328.cms",
+    "category": "beverages",
+    "price": 30,
+    "quantity": 0
+  },
+  {
+    "id": 11,
+    "name": "Coke",
+    "imgsrc": "https://5.imimg.com/data5/SELLER/Default/2021/12/MI/CM/OC/26602448/300-ml-coke-original-500x500.jpg",
+    "category": "beverages",
+    "price": 55,
+    "quantity": 0
+  },
+  {
+    "id": 12,
+    "name": "Lassi",
+    "imgsrc": "https://pipingpotcurry.com/wp-content/uploads/2021/05/Lassi-in-a-glass.jpg",
+    "category": "beverages",
+    "price": 90,
+    "quantity": 0
+  },
+  {
+    "id": 13,
+    "name": "Milk",
+    "imgsrc": "https://m.media-amazon.com/images/I/61lzZAgOCzL.jpg",
+    "category": "beverages",
+    "price": 40,
+    "quantity": 0
+  },
+  {
+    "id": 14,
+    "name": "Tandoori Platter",
+    "imgsrc": "https://images.slurrp.com/prod/recipe_images/better-butter/tandoori-paneer-platter_HX3XOHVHLY0WD9AXFZZG.webp?impolicy=slurrp-20210601&width=1200&height=675",
+    "category": "food",
+    "price": 295,
+    "quantity": 0
+  },
+  {
+    "id": 16,
+    "name": "Naan",
+    "imgsrc": "https://static.toiimg.com/thumb/53338316.cms?width=1200&height=900",
+    "category": "food",
+    "price": 20,
+    "quantity": 0
+  },
+  {
+    "id": 17,
+    "name": "Paneer Butter Masala",
+    "imgsrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT5kecc5mebmjSS-CrZAKaa_RUwoFa5NOuwg&usqp=CAU",
+    "category": "food",
+    "price": 240,
+    "quantity": 0
+  },
+  {
+    "id": 18,
+    "name": "Gol Gappe",
+    "imgsrc": "https://static.toiimg.com/photo/75107900.cms",
+    "category": "food",
+    "price": 60,
+    "quantity": 0
+  }
+]
+

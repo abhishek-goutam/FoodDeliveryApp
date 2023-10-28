@@ -1,9 +1,4 @@
-import React, { useState } from "react";
-import Menu from "./Menu";
-import Cart from "./Cart";
-import Checkout from "./Checkout";
-// import products from './Data'
-
+import React from "react";
 const styles = {
   cardContainer: {
     display: "flex",
@@ -33,7 +28,9 @@ const styles = {
 };
 
 const AddToCart = () => {
-  const addedItem = JSON.parse(localStorage.getItem("items")) ? JSON.parse(localStorage.getItem("items")):[];
+  const addedItem = JSON.parse(localStorage.getItem("items"))
+    ? JSON.parse(localStorage.getItem("items"))
+    : [];
   const addToCart = (item) => {
     addedItem.push(item);
     console.log("CART", addedItem);
