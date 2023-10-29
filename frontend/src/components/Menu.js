@@ -34,7 +34,7 @@ const Menu = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios.get("food-delivery-app-dusky.vercel.app/api/dishes").then((response) => {
+    axios.get("https://food-delivery-app-dusky.vercel.app/api/dishes").then((response) => {
       console.log("response",response.data);
       setProducts(response.data);
     });
