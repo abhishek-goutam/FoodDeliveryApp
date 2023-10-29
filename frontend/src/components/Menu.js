@@ -64,7 +64,7 @@ const Menu = () => {
           <div style={styles.card} key={item.id}>
             <div style={styles.item}>
               <div key={index}>
-                <img style={styles.img} src={item.imgSrc} alt={item.name} />
+                <img style={styles.img} src={item.imgsrc} alt={item.name} />
               </div>
               <div>
                 <h3>{item.name} </h3>
