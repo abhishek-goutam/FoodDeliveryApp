@@ -5,7 +5,6 @@ import Contact from "./components/Contact";
 import Menu from "./components/Menu";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import AddToCart from "./components/AddToCart";
 import Login from "./components/Login";
 import Cart from "./components/Cart";
 

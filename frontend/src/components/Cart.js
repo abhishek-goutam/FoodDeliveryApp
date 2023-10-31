@@ -3,11 +3,17 @@ import "../styles./cart.css";
 import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+const subtotalDetailsStyle = {
+  fontSize: "1.2rem",
+  margin: "10px 0",
+};
 
+const boldTextStyle = {
+  fontWeight: "bold", // Add this property to make the text bold
+};
 const Cart = () => {
   const navigate = useNavigate();
   const [cart, setCart] = useState([]);
-
   //this is called on component mount
   useEffect(() => {
     //turn it into js
@@ -51,12 +57,12 @@ const Cart = () => {
   return (
     <div className="cart-food-list">
       <div className="cart-child">
-        <h2 style={{ textAlign: "center" ,color:"red"}}>Your Cart</h2>
+        <h2 style={{ textAlign: "center", color: "red" }}>Your Cart</h2>
         {cart.map((item) => {
-          const { name, price, imgSrc, id, quantity } = item;
+          const { name, price, imgsrc, id, quantity } = item;
           return (
             <div key={id} className="cart-item">
-              <img src={imgSrc} alt="" />
+              <img src={imgsrc} alt="" />
               <p className="cart-item-name">{name}</p>
               <p className="cart-price">
                 Rs. {price} x {quantity}
@@ -68,10 +74,10 @@ const Cart = () => {
       {
         <div className="subtotal">
           <h2>Subtotal</h2>
-          <div className="subtotao-details">
-            <p>Total Price : Rs. {totalAmount}</p>
+          <div style={subtotalDetailsStyle} className="subtotao-details">
+            <p style={boldTextStyle}>Total Price : Rs. {totalAmount}</p>
             <hr />
-            <p>Final Price : Rs. {totalAmount}</p>
+            <p style={boldTextStyle}>Final Price : Rs. {totalAmount}</p>
           </div>
           <button className="check-btn">Order Now</button>
           <button onClick={() => navigate("/menu")} className="return-btn">
