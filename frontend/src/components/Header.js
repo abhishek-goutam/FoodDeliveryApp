@@ -39,17 +39,14 @@ const cartIconStyle = {
 
 function Header() {
   const [cart, setCart] = useState([]);
-  const totalItemsInCart = cart.reduce((total, item) => total + item.quantity, 0);
   //this is called on component mount
   useEffect(() => {
-    //turn it into js
     let localCart = localStorage.getItem("cart");
-
     if (localCart) localCart = JSON.parse(localCart);
-
-    //load persisted cart into state if it exists
     if (localCart) setCart(localCart);
   }, [cart]); 
+  const totalItemsInCart = cart.reduce((total, item) => total + item.quantity, 0);
+
   return (
     <div style={headerStyle} className="header">
       <NavLink exact to='/home'>
