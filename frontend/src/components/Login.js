@@ -37,7 +37,7 @@ const Login = () => {
       const { user, token } = response.data;
       addUserToLocalStorage({ user, token });
       if (user) {
-        navigate("/foods");
+        navigate("/menu");
         window.location.reload();
       }
     } catch (e) {
@@ -55,7 +55,7 @@ const Login = () => {
       const { user, token } = response.data;
       addUserToLocalStorage({ user, token });
       if (user) {
-        navigate("/foods");
+        navigate("/menu");
         window.location.reload();
       }
     } catch (e) {
