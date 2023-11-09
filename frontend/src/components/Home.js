@@ -12,15 +12,17 @@ const Home = () => {
 
   const containerStyle = {
     
-    display: "flex",
+    display: "block",
     flexDirection: "column",
-    alignItems: "center",
+    alignItems: "right",
     justifyContent: "center",
     height: "70vh",
     backgroundImage: `url(${background})`,
     backgroundSize: "cover", // Ensure the image covers the container
     backgroundRepeat: "no-repeat",
-    zIndex:'-10'
+    zIndex:'-1',
+    
+
  
     // background: "#f5f5f5", // Light gray background
 
@@ -30,7 +32,7 @@ const Home = () => {
     fontSize: "3rem",
     marginBottom: "1rem",
     fontFamily: "cursive",
-    color: "#4CAF50", // Green color
+    color: "#f5f5f5", // Green color
   };
 
   const subHeadingStyle = {
@@ -38,6 +40,7 @@ const Home = () => {
     marginBottom: "2rem",
     fontFamily: "Arial, sans-serif",
     color: "#4CAF50", // Green color
+    marginLeft:'1rem'
   };
 
   const buttonStyle = {

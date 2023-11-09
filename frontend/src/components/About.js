@@ -61,7 +61,7 @@ function About() {
     fontSize: "1.5rem",
     marginBottom: "1rem",
     fontFamily: "Arial, sans-serif",
-    color: "#333", // Dark gray color
+    color: "rgb(212, 236, 236)", // Dark gray color
     textAlign: "center",
   };
 

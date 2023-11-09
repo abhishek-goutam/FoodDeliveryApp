@@ -29,7 +29,7 @@ const cartHeaderStyle = {
   display: "flex",
   alignItems: "center",
   fontSize: "1.5rem",
-  color: "red",
+  color: "white",
 };
 
 const cartIconStyle = {
@@ -50,7 +50,7 @@ function Header() {
   return (
     <div style={headerStyle} className="header">
       <NavLink exact to='/home'>
-      <h1 style={logoStyle}>Port Belly</h1>
+      <h1 style={logoStyle}>Port Belly😋 </h1>
       </NavLink>
       <nav>
         <ul className="nav-list">
@@ -60,7 +60,7 @@ function Header() {
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/about" style={navLinkStyle} activeStyle={activeStyle}>
+            <NavLink to="/about" style={navLinkStyle}>
               About
             </NavLink>
           </li>
@@ -79,7 +79,7 @@ function Header() {
       <NavLink to="/cart" style={navLinkStyle} activeStyle={activeStyle}>
       <div style={cartHeaderStyle}>
         <ShoppingCartIcon style={cartIconStyle}/>
-        Your Cart ({totalItemsInCart})
+       ({totalItemsInCart})
       </div>
       </NavLink>
     </div>
