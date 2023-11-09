@@ -23,7 +23,7 @@ const Cart = () => {
 
     //load persisted cart into state if it exists
     if (localCart) setCart(localCart);
-  }, []); //the empty array ensures useEffect only runs once
+  }, [cart]); //the empty array ensures useEffect only runs once
 
   const handleRemove = () => {
     localStorage.removeItem("cart");
