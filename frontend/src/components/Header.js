@@ -49,13 +49,13 @@ function Header() {
 
   return (
     <div style={headerStyle} className="header">
-      <NavLink exact to='/home'>
+      <NavLink exact to='/'>
       <h1 style={logoStyle}>Port Belly😋 </h1>
       </NavLink>
       <nav>
         <ul className="nav-list">
           <li className="nav-item">
-            <NavLink exact to="/home" style={navLinkStyle} activeStyle={activeStyle}>
+            <NavLink exact to="/" style={navLinkStyle} activeStyle={activeStyle}>
               Home
             </NavLink>
           </li>

@@ -75,7 +75,7 @@ function Menu() {
       .then((response) => {
         setProducts(response.data);
       });
-  }, []);
+  }, [products]);
 
   const addItem = (item) => {
     let existingCart = [];
